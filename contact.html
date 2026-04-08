@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Ridge Valley Packaging. Request a quote or get in touch." />
+    <title>Contact Us | Ridge Valley Packaging</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      .form-group { margin-bottom: 20px; }
+      .form-label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.95rem; }
+      .form-control { width: 100%; padding: 12px 15px; border: 1px solid var(--color-gray); border-radius: var(--radius-md); font-family: inherit; font-size: 1rem; transition: var(--transition); }
+      .form-control:focus { outline: none; border-color: var(--color-yellow); box-shadow: 0 0 0 3px rgba(255, 222, 0, 0.2); }
+      textarea.form-control { resize: vertical; min-height: 120px; }
+      .alert { padding: 15px; border-radius: var(--radius-md); background: rgba(255, 222, 0, 0.1); border: 1px solid rgba(255, 222, 0, 0.3); margin-bottom: 30px; font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <!-- Inject Navbar -->
+    <div id="navbar-container"></div>
+
+    <main>
+      <!-- Page Header -->
+      <section class="section section-dark" style="padding: 100px 0 80px;">
+        <div class="container" style="text-align: center;">
+          <h1 style="font-size: 3.5rem; margin-bottom: 20px; letter-spacing: -1px;">CONTACT US</h1>
+          <p style="font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">Get in touch with our team for inquiries, quotes, or support.</p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section">
+        <div class="container grid-2" style="gap: 60px;">
+          <!-- Contact Form -->
+          <div>
+            <h2 style="font-size: 1.5rem; margin-bottom: 30px; border-bottom: 1px solid var(--color-gray); padding-bottom: 15px;">SEND US A MESSAGE</h2>
+            
+            <div class="alert">
+              <strong>Notice:</strong> This form is for serious business inquiries only. Please ensure your message is professional and specific to your packaging needs.
+            </div>
+
+            <form action="#">
+              <div class="grid-2" style="gap: 20px; margin-bottom: 20px;">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label class="form-label" for="name">Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Your name" required />
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label class="form-label" for="email">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="How can we help you?" required />
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" class="form-control" placeholder="Your message" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 4px; padding: 15px; font-size: 1.1rem;">Submit Request</button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h2 style="font-size: 1.5rem; margin-bottom: 30px; border-bottom: 1px solid var(--color-gray); padding-bottom: 15px;">CONTACT INFORMATION</h2>
+            
+            <div style="background: var(--color-light-gray); padding: 30px; border-radius: var(--radius-md); margin-bottom: 20px;">
+              <h3 style="display: flex; align-items: center; gap: 10px; font-size: 1.1rem; margin-bottom: 15px;">
+                <svg style="color: var(--color-yellow);" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                EMAIL US
+              </h3>
+              <p style="font-weight: 600; font-size: 1.1rem;"><a href="mailto:info@ridgevalley.co">info@ridgevalley.co</a></p>
+              <p style="color: var(--color-dark-gray); font-size: 0.9rem; margin-top: 5px;">For general inquiries and information</p>
+            </div>
+            
+            <div style="background: var(--color-light-gray); padding: 30px; border-radius: var(--radius-md); margin-bottom: 20px;">
+              <h3 style="display: flex; align-items: center; gap: 10px; font-size: 1.1rem; margin-bottom: 15px;">
+                <svg style="color: var(--color-yellow);" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                CALL US
+              </h3>
+              <p style="font-weight: 600; font-size: 1.1rem;"><a href="tel:7028174778">(702) 817-4778</a></p>
+              <p style="color: var(--color-dark-gray); font-size: 0.9rem; margin-top: 5px;">Monday to Friday, 9am to 5pm EST</p>
+            </div>
+            
+            <div style="background: var(--color-light-gray); padding: 30px; border-radius: var(--radius-md);">
+              <h3 style="display: flex; align-items: center; gap: 10px; font-size: 1.1rem; margin-bottom: 15px;">
+                <svg style="color: var(--color-yellow);" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                RESPONSE TIME
+              </h3>
+              <p style="color: var(--color-dark-gray); font-size: 0.9rem;">We strive to respond to all inquiries within 24 hours during business days. For urgent matters, please call our toll-free number.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Inject Footer -->
+    <div id="footer-container"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
